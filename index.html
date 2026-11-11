@@ -97,6 +97,45 @@ nav a.hot{border-color:var(--acc);color:var(--acc);font-weight:600}nav a.hot.cur
 .step legend{font-family:var(--disp);font-weight:700;font-size:15px;padding:0 6px;color:var(--fg)}.step legend span{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--acc);color:var(--sheet);font-size:13px;margin-left:6px}
 .mini{font:inherit;font-size:12.5px;background:transparent;border:0;color:var(--acc);cursor:pointer;padding:4px 4px 0;text-decoration:underline}
 .act{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.btn.big{font-size:16px;padding:10px 24px}.btn[disabled]{opacity:.6;cursor:wait}#pr-status{font-size:14px}
+@media (max-width:640px){
+body{font-size:16px;margin:0;padding-inline:0;padding-block:14px 40px}
+.wrap{gap:10px}
+.wrap>*{min-width:0}.wrap>:first-child{padding-inline:16px}
+h1{font-size:22px;line-height:1.45}body.inner h1{font-size:17px}body.inner .by{display:none}
+.lead{font-size:14.5px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:8px}.facts>*{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:8px 12px;font-size:13.5px}.facts b{display:block;font-size:22px;margin:0}
+nav{position:sticky;flex-wrap:nowrap;overflow-x:auto;gap:8px;padding:8px 16px;scrollbar-width:none;border-bottom:1px solid var(--rule);-webkit-overflow-scrolling:touch}nav::-webkit-scrollbar{display:none}
+nav a{flex:none;white-space:nowrap;padding:8px 14px;font-size:14.5px;border-radius:999px}
+.view{border-inline:0;border-radius:0;padding:18px 16px;gap:16px}
+h2{font-size:22px}
+.meta,.m,.crumb{font-size:14.5px}
+.hcard,.ccard{padding:14px;gap:12px}.hcard b,.ccard b{font-size:16.5px}.hcard small,.ccard small{font-size:14px}
+.fl{flex-wrap:nowrap;overflow-x:auto;margin-inline:-16px;padding:2px 16px 6px;scrollbar-width:none}.fl::-webkit-scrollbar{display:none}
+.fl .f{flex:none;white-space:nowrap;font-size:14px;padding:7px 14px;border-radius:999px}
+.legend{font-size:12.5px;gap:4px 12px}
+.g{display:block;padding:16px 0}
+.rank{float:right;width:28px;height:28px;line-height:28px;border-radius:50%;background:var(--wash);color:var(--acc);font-size:13.5px;font-weight:700;margin:0 0 4px 10px}
+h4{font-size:16.5px;line-height:1.65}
+.m{clear:both;margin-top:6px}
+.chip{font-size:12.5px;padding:1px 10px}
+.st{margin-top:12px;background:var(--bg);border-radius:10px;padding:10px 12px;gap:6px}
+.p b{font-size:26px}.p small{font-size:13px}
+.strip{display:flex;gap:3px;width:100%}.y{flex:1;width:auto;height:14px}
+.sub{font-size:12.5px}
+.go{font-size:14px;padding:6px 14px;margin-top:10px}
+details{font-size:15px;margin-top:8px}summary{padding-block:8px;font-weight:600}
+.qs{list-style:none;padding:0;color:var(--fg);font-size:15px;line-height:1.85}.qs li{border-top:1px solid var(--rule);padding:10px 0}.qs b{display:inline-block;color:var(--acc)}
+.ck{gap:2px 16px;font-size:15px}.ck label{min-height:38px}.ck input,.row input[type=checkbox]{width:18px;height:18px}
+.row{font-size:15px}select,#pr-n{font-size:16px;padding:6px 8px}
+.btn{padding:11px 20px;font-size:15.5px}.btn.big{width:100%;font-size:17px;padding:14px}
+.mini{font-size:14px;padding:8px 6px}
+.act{display:grid}.act .btn{width:100%}
+.step{padding:10px 12px}
+.pager{gap:8px}.pager .btn{order:-1;width:100%;text-align:center}
+.pq{padding-right:18px;font-size:15px}.pq .s{font-size:13px}
+.bar{grid-template-columns:minmax(0,1fr) 44px;gap:2px 10px;font-size:14.5px;padding-block:6px}.bar>:first-child{grid-column:1/-1}
+.pages{margin-inline:-16px;gap:8px}.pages img{border-inline:0}
+}
 @page{size:A4;margin:0}
 @media print{body{padding:0;background:#fff}body::before{display:none}.wrap>*:not(.pr-on),.pr-on>*:not(.pages){display:none!important}.wrap,.pr-on{display:block!important;border:0;padding:0;max-width:none}.pages{display:block}.pages img{display:block;width:210mm;max-width:none;height:297mm;border:0;box-shadow:none;break-after:page}}
 </style>
@@ -109,7 +148,7 @@ nav a.hot{border-color:var(--acc);color:var(--acc);font-weight:600}nav a.hot.cur
 <section class="view" id="home"><header><span class="eye">ابدأ من هنا</span><h2>شتريد تسوي؟</h2></header>
 <div class="cards">
 <a class="hcard main" href="#pred"><span class="hn">★</span><span><b>أنشئ مرشحاتك الوزارية</b><small>اختر الفصول ونوع الأسئلة وعددها، وتنكتبلك على ورق A4 جاهزة للتحميل PDF أو الطباعة.</small></span></a>
-<a class="hcard" href="#chapters"><span class="hn">9</span><span><b>تصفح حسب الفصل</b><small>كل موضوع بالفصل، نسبة تكراره، وكل أسئلته الوزارية من 2013 إلى 2026.</small></span></a>
+<a class="hcard" href="#chapters"><span class="hn">8</span><span><b>تصفح حسب الفصل</b><small>كل موضوع بالفصل، نسبة تكراره، وكل أسئلته الوزارية من 2013 إلى 2026.</small></span></a>
 <a class="hcard" href="#overview"><span class="hn">25</span><span><b>الأكثر تكراراً</b><small>أكثر 25 موضوع تكرر بكل المنهج، ووزن كل فصل بالأوراق الأخيرة.</small></span></a>
 <a class="hcard" href="#tips"><span class="hn">✓</span><span><b>نصائح للطالب</b><small>شلون تستفاد من المرشحات، وشنو تبدي بيه، وأخطاء تضيّع درجات.</small></span></a>
 <a class="hcard" href="#method"><span class="hn">؟</span><span><b>شلون انحسب</b><small>المعادلة، والاختبار الرجعي، والحذوفات، ومصادر الأوراق.</small></span></a>
